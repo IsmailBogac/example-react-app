@@ -6,7 +6,7 @@ function Menu() {
     const navigate = useNavigate();
     return (
     <div  >
-      <h2>Example App</h2>
+      <h2>Example App 2</h2>
       <ul className='list'>
 
         <li>
