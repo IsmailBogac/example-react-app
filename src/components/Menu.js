@@ -5,7 +5,7 @@ import "../App.css";
 function Menu() {
     const navigate = useNavigate();
     return (
-    <div  >
+      <div  >
       <h2>Example App 2</h2>
       <ul className='list'>
 
@@ -21,6 +21,9 @@ function Menu() {
         </li>
         <li>
             <NavLink to="contact" activeClassName = "active">İletişim</NavLink>
+        </li>
+        <li>
+          <a href="/#">Learn React</a>
         </li>
       </ul>
     </div>
