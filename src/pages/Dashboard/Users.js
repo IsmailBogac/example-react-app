@@ -7,7 +7,7 @@ function Users() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() =>{
-    fetch("https://jsonplaceholder.typicode.com/users")
+    fetch(`${process.env.REACT_APP_API_ENDPOINT}/users`)
     .then(res => res.json())
     .then((data) => setUsers(data))
     .finally(() => setLoading(false))

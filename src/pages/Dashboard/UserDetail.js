@@ -11,7 +11,7 @@ function UserDetail() {
     useEffect(() => {   
         if(!user?.id){
 
-            fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
+            fetch(`${process.env.REACT_APP_API_ENDPOINT}/users/${id}`)
             .then(res => res.json())
             .then((data) => setUser(data));
             
